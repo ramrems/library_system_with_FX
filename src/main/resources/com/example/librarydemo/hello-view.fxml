@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="AnaPencere" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="550.0" stylesheets="@still.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarydemo.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="106.0" layoutY="21.0" prefHeight="42.0" prefWidth="334.0" style="-fx-background-color: #CCc4c4c4;" text="İremin Kütüphanesine Hoşgeldiniz" textFill="#612729">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="135.0" layoutY="91.0" prefHeight="233.0" prefWidth="280.0" style="-fx-background-color: #CCc4c4c4;">
+         <children>
+            <Button fx:id="uyeOl" layoutX="138.0" layoutY="148.0" mnemonicParsing="false" onAction="#onUyeOl" prefHeight="25.0" prefWidth="83.0" text="Üye Ol" />
+            <Button fx:id="giris" layoutX="36.0" layoutY="148.0" mnemonicParsing="false" onAction="#onGirisYap" prefHeight="25.0" prefWidth="83.0" text="Giriş Yap" />
+            <TextField fx:id="txtid" layoutX="57.0" layoutY="100.0" promptText="id" />
+            <TextField fx:id="txtsoyisim" layoutX="57.0" layoutY="65.0" promptText="soyisim" />
+            <TextField fx:id="txtisim" layoutX="58.0" layoutY="31.0" promptText="isim" />
+            <Label fx:id="sonuc" alignment="CENTER" layoutX="22.0" layoutY="198.0" prefHeight="25.0" prefWidth="219.0" textFill="#612729" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
